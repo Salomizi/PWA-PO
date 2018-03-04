@@ -4,3 +4,8 @@ body {
   padding: 0px;
   font-family: sans-serif;
 }
+
+:root {
+  --app-primary-color: #CF022D;
+  --app-secondary-color:#EF7D00;
+}

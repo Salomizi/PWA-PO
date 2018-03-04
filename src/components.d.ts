@@ -52,6 +52,36 @@ declare global {
 
 
 import {
+  AppPhoto as AppPhoto
+} from './components/app-photo/app-photo';
+
+declare global {
+  interface HTMLAppPhotoElement extends AppPhoto, HTMLStencilElement {
+  }
+  var HTMLAppPhotoElement: {
+    prototype: HTMLAppPhotoElement;
+    new (): HTMLAppPhotoElement;
+  };
+  interface HTMLElementTagNameMap {
+    "app-photo": HTMLAppPhotoElement;
+  }
+  interface ElementTagNameMap {
+    "app-photo": HTMLAppPhotoElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "app-photo": JSXElements.AppPhotoAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface AppPhotoAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
   AppProfile as AppProfile
 } from './components/app-profile/app-profile';
 

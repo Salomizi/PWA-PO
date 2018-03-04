@@ -23,10 +23,10 @@ export class AppHome {
           <p>
             Retrouvez ici tout ce que vous devez savoir sur nous !
           </p>
-
-          <stencil-route-link url='/profile/stencil'>
+          
+          <stencil-route-link url='/photos'>
             <ion-button>
-              Profile page
+              Photos
             </ion-button>
           </stencil-route-link>
         </ion-content>

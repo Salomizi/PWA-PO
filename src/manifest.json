@@ -1,6 +1,6 @@
 {
-  "name": "Ionic PWA Toolkit",
-  "short_name": "Ionic PWA",
+  "name": "MobileFactory App",
+  "short_name": "MF APP",
   "start_url": "/",
   "display": "standalone",
   "icons": [{

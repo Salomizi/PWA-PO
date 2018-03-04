@@ -1,18 +1,26 @@
 app-home {
+  .toolbar-background {
+    background-color: var(--app-primary-color) !important;
+  }
+
   ion-scroll {
     padding: 15px;
-  }
 
-  .toolbar-background {
-    background-color: #CF022D !important;
-  }
+    p {
+      font-weight: bold;
+    }
 
-  p {
-    font-weight: bold;
-  }
-  
+    stencil-route-link a {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+    }
+
+    .button-md {
+      background-color: var(--app-secondary-color);
+    }
+  }  
 }
-
-//EF7D00
-
 
