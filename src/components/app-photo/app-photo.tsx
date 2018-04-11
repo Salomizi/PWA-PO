@@ -5,30 +5,31 @@ import { Component, State } from '@stencil/core';
     styleUrl: 'app-photo.scss'
 })
 export class AppPhoto {
-    
+
     @State() rootPath: string = './assets/pictures/';
     @State() fileExtension: string = '.png';
 
-    @State() urls: string[];
-
-    
+    @State() picturesUrls: string[];
 
     componentWillLoad() {
-        this.urls = ['logo_white', 'logo_grey', 'heavy_image'];
+        this.picturesUrls = ['logo_white', 'logo_grey', 'heavy_image'];
     }
 
     render() {
 
         return (
-        <ion-page class='show-page'>  
+        <ion-page class='show-page'>
             <ion-content>
                 <ion-slides>
-                    {this.urls.map((url) => {
+                    {this.picturesUrls.map((url, index) => {
                         return <ion-slide>
                             <lazy-img src={this.rootPath + url + this.fileExtension}></lazy-img>
+                            <button>
+                              <a target="_self" href={this.rootPath + url + this.fileExtension} download={index}>DOWNLOAD IMAGE</a>
+                            </button>
                         </ion-slide>
                         }
-                    )}                    
+                    )}
                 </ion-slides>
             </ion-content>
         </ion-page>
