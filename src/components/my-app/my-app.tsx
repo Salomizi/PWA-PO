@@ -39,13 +39,26 @@ export class MyApp {
     return (
       <ion-app>
         <main>
-          <stencil-router>
-            <stencil-route url='/' component='app-home' exact={true}>
-            </stencil-route>
+          <ion-tabs class="tabs-icon-top tabs-positive">
 
-            <stencil-route url='/photos' component='app-photo'>
-            </stencil-route>
-          </stencil-router>
+
+            <ion-tab title="Home" >
+              <app-home />
+            </ion-tab>
+
+
+            <ion-tab title="About">
+             
+                <app-photo />
+            </ion-tab>
+
+            <ion-tab title="Contact" >
+              <ion-page class='show-page has-header'>
+                <app-title />
+              </ion-page>
+            </ion-tab>
+          </ion-tabs>
+
         </main>
       </ion-app>
     );

@@ -18,21 +18,22 @@ export class AppPhoto {
     render() {
 
         return (
-        <ion-page class='show-page'>
-            <ion-content>
-                <ion-slides>
-                    {this.picturesUrls.map((url, index) => {
-                        return <ion-slide>
-                            <lazy-img src={this.rootPath + url + this.fileExtension}></lazy-img>
-                            <button>
-                              <a target="_self" href={this.rootPath + url + this.fileExtension} download={index}>DOWNLOAD IMAGE</a>
-                            </button>
-                        </ion-slide>
+            <ion-page class='show-page has-header'>
+                <app-title />
+                <ion-content class='has-header' has-header='true'>
+                    <ion-slides>
+                        {this.picturesUrls.map((url, index) => {
+                            return <ion-slide>
+                                <lazy-img src={this.rootPath + url + this.fileExtension}></lazy-img>
+                                <button>
+                                    <a target="_self" href={this.rootPath + url + this.fileExtension} download={index}>DOWNLOAD IMAGE</a>
+                                </button>
+                            </ion-slide>
                         }
-                    )}
-                </ion-slides>
-            </ion-content>
-        </ion-page>
+                        )}
+                    </ion-slides>
+                </ion-content>
+            </ion-page>
         );
     }
 }

@@ -6,6 +6,6 @@ body {
 }
 
 :root {
-  --app-primary-color: #CF022D;
+  --app-primary-color: rgb(117, 105, 105);
   --app-secondary-color:#EF7D00;
 }
