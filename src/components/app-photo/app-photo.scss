@@ -8,10 +8,6 @@ app-photo {
             .swiper-container {
                 height: 100%;
 
-                /*.swiper-slide {
-                    display: initial;
-                }*/
-
                 .swiper-pagination-bullet-active {
                     background-color: var(--app-secondary-color);
                 }
@@ -21,6 +17,16 @@ app-photo {
                         background-size: contain;
                         background-repeat: no-repeat;
                     }
+                }
+
+                .download-link {
+                  position: absolute;
+                  top: 20px;
+                  right: 20px;
+
+                  img {
+                    max-height: 30px;
+                  }
                 }
             }
         }

@@ -1,4 +1,5 @@
 import { Component, State } from '@stencil/core';
+import { Http, Response } from '@angular/http';
 
 @Component({
     tag: 'app-photo',
@@ -24,9 +25,9 @@ export class AppPhoto {
                     {this.picturesUrls.map((url, index) => {
                         return <ion-slide>
                             <lazy-img src={this.rootPath + url + this.fileExtension}></lazy-img>
-                            <button>
-                              <a target="_self" href={this.rootPath + url + this.fileExtension} download={index}>DOWNLOAD IMAGE</a>
-                            </button>
+                            <a class="download-link" target="_self" href={this.rootPath + url + this.fileExtension} download={index}>
+                              <img src="./assets/icon/ic_file_download_black.svg"/>
+                            </a>
                         </ion-slide>
                         }
                     )}
