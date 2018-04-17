@@ -1,18 +1,28 @@
 import { Component, State } from '@stencil/core';
 
+import { getPictures, getRootPath, getFilesExtension } from '../../helpers/filesHelper';
+
 @Component({
     tag: 'app-photo',
     styleUrl: 'app-photo.scss'
 })
 export class AppPhoto {
 
-    @State() rootPath: string = './assets/pictures/';
-    @State() fileExtension: string = '.png';
+    @State() element;
+
+    @State() rootPath: string;
+    @State() fileExtension: string;
 
     @State() picturesUrls: string[];
 
     componentWillLoad() {
-        this.picturesUrls = ['logo_white', 'logo_grey', 'heavy_image'];
+        this.fileExtension = getFilesExtension();
+        this.rootPath = getRootPath();
+        this.picturesUrls = getPictures();
+    }
+
+    componentDidLoad() {
+      console.log('The component has been rendered');
     }
 
     render() {

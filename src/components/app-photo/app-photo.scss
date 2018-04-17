@@ -8,7 +8,7 @@ app-photo {
             .swiper-container {
                 height: 100%;
 
-                .swiper-pagination-bullet-active {
+                ion-slide {
                     background-color: var(--app-secondary-color);
                 }
 
