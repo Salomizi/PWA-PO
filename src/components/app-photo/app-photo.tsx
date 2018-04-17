@@ -1,5 +1,4 @@
 import { Component, State } from '@stencil/core';
-import { Http, Response } from '@angular/http';
 
 @Component({
     tag: 'app-photo',
