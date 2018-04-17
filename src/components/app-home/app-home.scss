@@ -21,6 +21,12 @@ app-home {
     .button-md {
       background-color: var(--app-secondary-color);
     }
-  }  
+  }
+  
+  .documentsTab{
+    background-color: white;
+    border-color: var(--app-secondary-color);
+    border-width: 5px;
+  }
 }
 

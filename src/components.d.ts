@@ -82,6 +82,36 @@ declare global {
 
 
 import {
+  AppPresentation as AppPresentation
+} from './components/app-presentation/app-presentation';
+
+declare global {
+  interface HTMLAppPresentationElement extends AppPresentation, HTMLStencilElement {
+  }
+  var HTMLAppPresentationElement: {
+    prototype: HTMLAppPresentationElement;
+    new (): HTMLAppPresentationElement;
+  };
+  interface HTMLElementTagNameMap {
+    "app-presentation": HTMLAppPresentationElement;
+  }
+  interface ElementTagNameMap {
+    "app-presentation": HTMLAppPresentationElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "app-presentation": JSXElements.AppPresentationAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface AppPresentationAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
   AppProfile as AppProfile
 } from './components/app-profile/app-profile';
 
@@ -106,6 +136,36 @@ declare global {
   namespace JSXElements {
     export interface AppProfileAttributes extends HTMLAttributes {
       match?: MatchResults;
+    }
+  }
+}
+
+
+import {
+  AppTitle as AppTitle
+} from './components/app-title/app-title';
+
+declare global {
+  interface HTMLAppTitleElement extends AppTitle, HTMLStencilElement {
+  }
+  var HTMLAppTitleElement: {
+    prototype: HTMLAppTitleElement;
+    new (): HTMLAppTitleElement;
+  };
+  interface HTMLElementTagNameMap {
+    "app-title": HTMLAppTitleElement;
+  }
+  interface ElementTagNameMap {
+    "app-title": HTMLAppTitleElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "app-title": JSXElements.AppTitleAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface AppTitleAttributes extends HTMLAttributes {
+      
     }
   }
 }

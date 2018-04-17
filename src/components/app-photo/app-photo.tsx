@@ -29,8 +29,7 @@ export class AppPhoto {
                               <img src="./assets/icon/ic_file_download_black.svg"/>
                             </a>
                         </ion-slide>
-                        }
-                    )}
+                    })}
                 </ion-slides>
             </ion-content>
         </ion-page>

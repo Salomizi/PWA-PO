@@ -1,0 +1,16 @@
+app-presentation {
+  ion-scroll {
+    padding: 15px;
+    p {
+      font-weight: bold;
+    }
+    stencil-route-link a {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+    }
+  
+  }
+}
