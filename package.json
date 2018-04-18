@@ -16,9 +16,15 @@
     "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
+  "@ionic-native/core": "^4.2.0",
+    "@angular/core": "^4.4.7",
+    "@ionic-native/native-page-transitions": "^4.7.0",
     "@ionic/core": "0.0.2-48",
     "@stencil/core": "0.4.0",
-    "@stencil/router": "latest"
+    "@stencil/router": "latest",
+    "ng2-facebook-sdk": "~2.3.1",
+    "rxjs": "^5.0.1",
+    "zone.js": "^0.8.4"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",

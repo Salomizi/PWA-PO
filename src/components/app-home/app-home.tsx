@@ -13,9 +13,8 @@ export class AppHome {
         <app-title />
         <ion-content >
           <app-presentation />
-          <ion-button href="mailto:jeremie.curtelin@soprasteria.com">
-            Contactez-moi
-          </ion-button>
+         
+          <app-facebookvideo/>
         </ion-content>
       </ion-page>
 

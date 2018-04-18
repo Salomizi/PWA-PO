@@ -39,20 +39,20 @@ export class MyApp {
     return (
       <ion-app>
         <main>
-          <ion-tabs class="tabs-icon-top tabs-positive">
+          <ion-tabs class="tabs-icon-top tabs-positive tabs">
 
 
-            <ion-tab title="Home" >
+            <ion-tab title="Accueil" >
               <app-home />
             </ion-tab>
 
 
-            <ion-tab title="About">
+            <ion-tab title="Galerie" icon='md-ion-add'>
              
                 <app-photo />
             </ion-tab>
 
-            <ion-tab title="Contact" >
+            <ion-tab class='tab-document' title="Documents" icon-on="documentIcon" icon-off="documentIcon" >
               <ion-page class='show-page has-header'>
                 <app-title />
               </ion-page>

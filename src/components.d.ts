@@ -22,6 +22,36 @@ declare global {
 
 
 import {
+  AppFacebookVideo as AppFacebookvideo
+} from './components/app-facebookvideo/app-facebookvideo';
+
+declare global {
+  interface HTMLAppFacebookvideoElement extends AppFacebookvideo, HTMLStencilElement {
+  }
+  var HTMLAppFacebookvideoElement: {
+    prototype: HTMLAppFacebookvideoElement;
+    new (): HTMLAppFacebookvideoElement;
+  };
+  interface HTMLElementTagNameMap {
+    "app-facebookvideo": HTMLAppFacebookvideoElement;
+  }
+  interface ElementTagNameMap {
+    "app-facebookvideo": HTMLAppFacebookvideoElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "app-facebookvideo": JSXElements.AppFacebookvideoAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface AppFacebookvideoAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
   AppHome as AppHome
 } from './components/app-home/app-home';
 

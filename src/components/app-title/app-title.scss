@@ -7,7 +7,16 @@ app-title {
   }
   .imgToolBar {
     vertical-align: middle;
-    max-width: 35%;
+    max-width: 25%;
   }
-  
+
+  ion-button{
+    max-height: 50%;
+  }
+  .button-md {
+    max-width: 15%;
+    padding: 1%;
+    vertical-align: middle;
+    background-color: var(--app-secondary-color);
+  }
 }
