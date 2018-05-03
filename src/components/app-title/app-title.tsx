@@ -23,7 +23,7 @@ export class AppTitle {
 
         return (
 
-            <ion-header class="bar-header bar-stable headerToolbar" >
+            <ion-header class="bar-header bar-stable headerToolbar " >
                 <ion-toolbar class="toolbar" color='primary' >
                     <img class="imgToolBar" src={this.mfPictureUrl}> </img>
                     <ion-title >La Mobile Factory</ion-title>

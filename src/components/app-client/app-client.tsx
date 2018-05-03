@@ -52,34 +52,34 @@ export class AppClient {
     render() {
 
         return (
+            <ion-page>
+                <ion-content>
+                    <app-title />
+                    <ion-slides class='parentSlider' id='parentSlider'>
+                        {this.picturesUrls.map((projet) => {
+                            return <ion-slide>
+                                <div class='verticalDiv'>
 
-            <ion-content>
-                <app-title />
-                <ion-slides id='parentSlider'>
-                    {this.picturesUrls.map((projet) => {
-                        return <ion-slide>
-                            <div class='verticalDiv'>
+                                    <div>
+                                        <img class='logo' src={this.rootPath + projet.client_logo_name + this.fileExtension} />
+                                        <div class='textDiv'>{projet.description}</div>
+                                    </div>
+                                    <ion-slides>
+                                        {this.pictures.map((picture) => {
+                                            return <ion-slide>
+                                                <lazy-img src={this.rootPath + picture + this.fileExtension} />
+                                            </ion-slide>
+                                        })}
+                                    </ion-slides>
 
-                                <div>
-                                    <img class='logo' src={this.rootPath + projet.client_logo_name + this.fileExtension} />
-                                    <div class='textDiv'>{projet.description}</div>
+
+
                                 </div>
-                                <ion-slides>
-                                    {this.pictures.map((picture) => {
-                                        return <ion-slide>
-                                            <lazy-img src={this.rootPath + picture + this.fileExtension} />
-                                        </ion-slide>
-                                    })}
-                                </ion-slides>
-
-
-
-                            </div>
-                        </ion-slide>
-                    })}
-                </ion-slides>
-            </ion-content>
-
+                            </ion-slide>
+                        })}
+                    </ion-slides>
+                </ion-content>
+            </ion-page>
         );
     }
 }

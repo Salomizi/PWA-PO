@@ -1,23 +1,32 @@
+
 app-title {
   ion-title {
-    vertical-align: middle;
+    text-align: center;
     font-weight: bold;
-    display: inline-block
+  }
+  .toolbar-content {
+    display: flex
   }
   .imgToolBar {
     vertical-align: middle;
-    max-width: 20%;
+    // .md & {
+    //   height: $toolbar-md-height;
+    // }
+    // .ios & {
+    //   height: $toolbar-ios-height;
+    // }
+    // .wp & {
+    //   height: $toolbar-wp-height;
+    // }
+    height:56px;
   }
   ion-button {
     max-height: 50%;
   }
-  .button-md {
+  .button {
     max-width: 15%;
     padding: 1%;
     vertical-align: middle;
     background-color: var(--app-secondary-color);
-  }
-  .headerToolbar {
-    max-height:1%;
   }
 }
