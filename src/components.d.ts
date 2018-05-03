@@ -4,259 +4,364 @@
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
 
-import '@stencil/router';
-
-import '@ionic/core';
-
-import {
-  MatchResults,
-} from '@stencil/router';
+import '@stencil/core';
 
 declare global {
+  namespace JSX {
+    interface Element {}
+    export interface IntrinsicElements {}
+  }
+  namespace JSXElements {}
+
   interface HTMLStencilElement extends HTMLElement {
     componentOnReady(): Promise<this>;
     componentOnReady(done: (ele?: this) => void): void;
+
+    forceUpdate(): void;
   }
+
+  interface HTMLAttributes {}
 }
 
 
 
+import 'ionicons';
+
 import {
-  AppFacebookVideo as AppFacebookvideo
-} from './components/app-facebookvideo/app-facebookvideo';
+  MatchResults,
+} from '@stencil/router';
+import {
+  EventEmitter,
+} from '@stencil/core';
 
 declare global {
-  interface HTMLAppFacebookvideoElement extends AppFacebookvideo, HTMLStencilElement {
+
+  namespace StencilComponents {
+    interface AppClient {
+
+    }
   }
+
+  interface HTMLAppClientElement extends StencilComponents.AppClient, HTMLStencilElement {}
+
+  var HTMLAppClientElement: {
+    prototype: HTMLAppClientElement;
+    new (): HTMLAppClientElement;
+  };
+  interface HTMLElementTagNameMap {
+    'app-client': HTMLAppClientElement;
+  }
+  interface ElementTagNameMap {
+    'app-client': HTMLAppClientElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'app-client': JSXElements.AppClientAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface AppClientAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface AppContact {
+
+    }
+  }
+
+  interface HTMLAppContactElement extends StencilComponents.AppContact, HTMLStencilElement {}
+
+  var HTMLAppContactElement: {
+    prototype: HTMLAppContactElement;
+    new (): HTMLAppContactElement;
+  };
+  interface HTMLElementTagNameMap {
+    'app-contact': HTMLAppContactElement;
+  }
+  interface ElementTagNameMap {
+    'app-contact': HTMLAppContactElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'app-contact': JSXElements.AppContactAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface AppContactAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface AppFacebookvideo {
+
+    }
+  }
+
+  interface HTMLAppFacebookvideoElement extends StencilComponents.AppFacebookvideo, HTMLStencilElement {}
+
   var HTMLAppFacebookvideoElement: {
     prototype: HTMLAppFacebookvideoElement;
     new (): HTMLAppFacebookvideoElement;
   };
   interface HTMLElementTagNameMap {
-    "app-facebookvideo": HTMLAppFacebookvideoElement;
+    'app-facebookvideo': HTMLAppFacebookvideoElement;
   }
   interface ElementTagNameMap {
-    "app-facebookvideo": HTMLAppFacebookvideoElement;
+    'app-facebookvideo': HTMLAppFacebookvideoElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "app-facebookvideo": JSXElements.AppFacebookvideoAttributes;
+      'app-facebookvideo': JSXElements.AppFacebookvideoAttributes;
     }
   }
   namespace JSXElements {
     export interface AppFacebookvideoAttributes extends HTMLAttributes {
-      
+
     }
   }
 }
 
 
-import {
-  AppHome as AppHome
-} from './components/app-home/app-home';
-
 declare global {
-  interface HTMLAppHomeElement extends AppHome, HTMLStencilElement {
+
+  namespace StencilComponents {
+    interface AppHome {
+
+    }
   }
+
+  interface HTMLAppHomeElement extends StencilComponents.AppHome, HTMLStencilElement {}
+
   var HTMLAppHomeElement: {
     prototype: HTMLAppHomeElement;
     new (): HTMLAppHomeElement;
   };
   interface HTMLElementTagNameMap {
-    "app-home": HTMLAppHomeElement;
+    'app-home': HTMLAppHomeElement;
   }
   interface ElementTagNameMap {
-    "app-home": HTMLAppHomeElement;
+    'app-home': HTMLAppHomeElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "app-home": JSXElements.AppHomeAttributes;
+      'app-home': JSXElements.AppHomeAttributes;
     }
   }
   namespace JSXElements {
     export interface AppHomeAttributes extends HTMLAttributes {
-      
+
     }
   }
 }
 
 
-import {
-  AppPhoto as AppPhoto
-} from './components/app-photo/app-photo';
-
 declare global {
-  interface HTMLAppPhotoElement extends AppPhoto, HTMLStencilElement {
+
+  namespace StencilComponents {
+    interface AppPhoto {
+
+    }
   }
+
+  interface HTMLAppPhotoElement extends StencilComponents.AppPhoto, HTMLStencilElement {}
+
   var HTMLAppPhotoElement: {
     prototype: HTMLAppPhotoElement;
     new (): HTMLAppPhotoElement;
   };
   interface HTMLElementTagNameMap {
-    "app-photo": HTMLAppPhotoElement;
+    'app-photo': HTMLAppPhotoElement;
   }
   interface ElementTagNameMap {
-    "app-photo": HTMLAppPhotoElement;
+    'app-photo': HTMLAppPhotoElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "app-photo": JSXElements.AppPhotoAttributes;
+      'app-photo': JSXElements.AppPhotoAttributes;
     }
   }
   namespace JSXElements {
     export interface AppPhotoAttributes extends HTMLAttributes {
-      
+
     }
   }
 }
 
 
-import {
-  AppPresentation as AppPresentation
-} from './components/app-presentation/app-presentation';
-
 declare global {
-  interface HTMLAppPresentationElement extends AppPresentation, HTMLStencilElement {
+
+  namespace StencilComponents {
+    interface AppPresentation {
+
+    }
   }
+
+  interface HTMLAppPresentationElement extends StencilComponents.AppPresentation, HTMLStencilElement {}
+
   var HTMLAppPresentationElement: {
     prototype: HTMLAppPresentationElement;
     new (): HTMLAppPresentationElement;
   };
   interface HTMLElementTagNameMap {
-    "app-presentation": HTMLAppPresentationElement;
+    'app-presentation': HTMLAppPresentationElement;
   }
   interface ElementTagNameMap {
-    "app-presentation": HTMLAppPresentationElement;
+    'app-presentation': HTMLAppPresentationElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "app-presentation": JSXElements.AppPresentationAttributes;
+      'app-presentation': JSXElements.AppPresentationAttributes;
     }
   }
   namespace JSXElements {
     export interface AppPresentationAttributes extends HTMLAttributes {
-      
+
     }
   }
 }
 
 
-import {
-  AppProfile as AppProfile
-} from './components/app-profile/app-profile';
-
 declare global {
-  interface HTMLAppProfileElement extends AppProfile, HTMLStencilElement {
+
+  namespace StencilComponents {
+    interface AppProfile {
+      'match': MatchResults;
+    }
   }
+
+  interface HTMLAppProfileElement extends StencilComponents.AppProfile, HTMLStencilElement {}
+
   var HTMLAppProfileElement: {
     prototype: HTMLAppProfileElement;
     new (): HTMLAppProfileElement;
   };
   interface HTMLElementTagNameMap {
-    "app-profile": HTMLAppProfileElement;
+    'app-profile': HTMLAppProfileElement;
   }
   interface ElementTagNameMap {
-    "app-profile": HTMLAppProfileElement;
+    'app-profile': HTMLAppProfileElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "app-profile": JSXElements.AppProfileAttributes;
+      'app-profile': JSXElements.AppProfileAttributes;
     }
   }
   namespace JSXElements {
     export interface AppProfileAttributes extends HTMLAttributes {
-      match?: MatchResults;
+      'match'?: MatchResults;
     }
   }
 }
 
 
-import {
-  AppTitle as AppTitle
-} from './components/app-title/app-title';
-
 declare global {
-  interface HTMLAppTitleElement extends AppTitle, HTMLStencilElement {
+
+  namespace StencilComponents {
+    interface AppTitle {
+
+    }
   }
+
+  interface HTMLAppTitleElement extends StencilComponents.AppTitle, HTMLStencilElement {}
+
   var HTMLAppTitleElement: {
     prototype: HTMLAppTitleElement;
     new (): HTMLAppTitleElement;
   };
   interface HTMLElementTagNameMap {
-    "app-title": HTMLAppTitleElement;
+    'app-title': HTMLAppTitleElement;
   }
   interface ElementTagNameMap {
-    "app-title": HTMLAppTitleElement;
+    'app-title': HTMLAppTitleElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "app-title": JSXElements.AppTitleAttributes;
+      'app-title': JSXElements.AppTitleAttributes;
     }
   }
   namespace JSXElements {
     export interface AppTitleAttributes extends HTMLAttributes {
-      
+
     }
   }
 }
 
 
-import {
-  LazyImg as LazyImg
-} from './components/lazy-img/lazy-img';
-
 declare global {
-  interface HTMLLazyImgElement extends LazyImg, HTMLStencilElement {
+
+  namespace StencilComponents {
+    interface LazyImg {
+      'alt': string;
+      'src': string;
+    }
   }
+
+  interface HTMLLazyImgElement extends StencilComponents.LazyImg, HTMLStencilElement {}
+
   var HTMLLazyImgElement: {
     prototype: HTMLLazyImgElement;
     new (): HTMLLazyImgElement;
   };
   interface HTMLElementTagNameMap {
-    "lazy-img": HTMLLazyImgElement;
+    'lazy-img': HTMLLazyImgElement;
   }
   interface ElementTagNameMap {
-    "lazy-img": HTMLLazyImgElement;
+    'lazy-img': HTMLLazyImgElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "lazy-img": JSXElements.LazyImgAttributes;
+      'lazy-img': JSXElements.LazyImgAttributes;
     }
   }
   namespace JSXElements {
     export interface LazyImgAttributes extends HTMLAttributes {
-      alt?: string;
-      src?: string;
+      'alt'?: string;
+      'onLazyImgloaded'?: (event: CustomEvent<HTMLImageElement>) => void;
+      'src'?: string;
     }
   }
 }
 
 
-import {
-  MyApp as MyApp
-} from './components/my-app/my-app';
-
 declare global {
-  interface HTMLMyAppElement extends MyApp, HTMLStencilElement {
+
+  namespace StencilComponents {
+    interface MyApp {
+
+    }
   }
+
+  interface HTMLMyAppElement extends StencilComponents.MyApp, HTMLStencilElement {}
+
   var HTMLMyAppElement: {
     prototype: HTMLMyAppElement;
     new (): HTMLMyAppElement;
   };
   interface HTMLElementTagNameMap {
-    "my-app": HTMLMyAppElement;
+    'my-app': HTMLMyAppElement;
   }
   interface ElementTagNameMap {
-    "my-app": HTMLMyAppElement;
+    'my-app': HTMLMyAppElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "my-app": JSXElements.MyAppAttributes;
+      'my-app': JSXElements.MyAppAttributes;
     }
   }
   namespace JSXElements {
     export interface MyAppAttributes extends HTMLAttributes {
-      
+
     }
   }
 }

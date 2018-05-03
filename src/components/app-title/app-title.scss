@@ -1,16 +1,14 @@
 app-title {
   ion-title {
-    text-align: center;
     vertical-align: middle;
     font-weight: bold;
     display: inline-block
   }
   .imgToolBar {
     vertical-align: middle;
-    max-width: 25%;
+    max-width: 20%;
   }
-
-  ion-button{
+  ion-button {
     max-height: 50%;
   }
   .button-md {
@@ -18,5 +16,8 @@ app-title {
     padding: 1%;
     vertical-align: middle;
     background-color: var(--app-secondary-color);
+  }
+  .headerToolbar {
+    max-height:1%;
   }
 }

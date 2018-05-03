@@ -22,15 +22,13 @@ export class AppTitle {
     render() {
 
         return (
-            
-        <ion-header class="bar-header bar-stable" md-height='56px'>
-            <ion-toolbar class="toolbar" color='primary' >
+
+            <ion-header class="bar-header bar-stable headerToolbar" >
+                <ion-toolbar class="toolbar" color='primary' >
                     <img class="imgToolBar" src={this.mfPictureUrl}> </img>
                     <ion-title >La Mobile Factory</ion-title>
-                    <ion-button  href="mailto:guillaume.rodriguez@soprasteria.com">
-                    <img  src={this.mailPictureUrl}> </img>
-          </ion-button>
-            </ion-toolbar>
+                    <app-contact />
+                </ion-toolbar>
             </ion-header>
         );
     }

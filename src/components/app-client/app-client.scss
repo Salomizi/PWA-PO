@@ -1,0 +1,30 @@
+app-client {
+  .scroll-inner {
+    height: 100%;
+    ion-slides {
+      height: 100%;
+      .swiper-container {
+        height: 100%;
+        ion-slide {
+          background-color: var(--app-secondary-color);
+        }
+        lazy-img {
+          img {
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+  .verticalDiv {
+    vertical-align: text-top;
+    float: left;
+  }
+  .textDiv {
+    display: inline-block;
+  }
+  .logo {
+    max-width: 20%;
+  }
+}

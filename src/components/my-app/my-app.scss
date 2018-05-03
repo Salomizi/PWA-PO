@@ -5,9 +5,13 @@ my-app {
 
        .tabs .tab-document .icon.documentIcon{
         background-repeat: no-repeat;
-        height: 100%;
+        height: 30%;
         background-image: url('./assets/pictures/folder_icon.svg');
         background-size:contain;
         
       }
+
+    ion-content {
+      position: static;
+    }
 }

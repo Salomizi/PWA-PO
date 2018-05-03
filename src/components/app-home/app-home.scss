@@ -4,7 +4,6 @@ app-home {
   }
 
   ion-scroll {
-    padding: 15px;
 
     p {
       font-weight: bold;
@@ -20,11 +19,6 @@ app-home {
 
     
   }
-  
-  .documentsTab{
-    background-color: white;
-    border-color: var(--app-secondary-color);
-    border-width: 5px;
-  }
+ 
 }
 

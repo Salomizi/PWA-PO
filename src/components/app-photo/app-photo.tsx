@@ -28,8 +28,9 @@ export class AppPhoto {
     render() {
 
         return (
-        <ion-page class='show-page'>
+        
             <ion-content>
+                <app-title/>
                 <ion-slides>
                     {this.picturesUrls.map((url, index) => {
                         return <ion-slide>
@@ -41,7 +42,7 @@ export class AppPhoto {
                     })}
                 </ion-slides>
             </ion-content>
-        </ion-page>
+        
         );
     }
 }
