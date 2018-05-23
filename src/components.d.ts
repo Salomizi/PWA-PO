@@ -23,9 +23,9 @@ declare global {
   interface HTMLAttributes {}
 }
 
-
-
 import 'ionicons';
+import '@stencil/router';
+import '@ionic/core';
 
 import {
   MatchResults,
