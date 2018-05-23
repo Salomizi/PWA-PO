@@ -18,7 +18,7 @@ export class AppClient {
 
     @State() pictures: string[];
 
-    @State() parentSwiper: any;
+    // @State() parentSwiper: any;
 
     componentWillLoad() {
         this.fileExtension = getFilesExtension();
@@ -26,28 +26,28 @@ export class AppClient {
         this.picturesUrls = getScreenShots();
 
         this.pictures = getPictures();
-        this.parentSwiper = document.getElementById('parentSlider');
+        // this.parentSwiper = document.getElementById('parentSlider');
 
-        if (this.parentSwiper != null) {
-            console.log('parentSwiper has been found');
-        }
+        // if (this.parentSwiper != null) {
+        //     console.log('parentSwiper has been found');
+        // }
     }
 
     componentDidLoad() {
         console.log('The component has been rendered');
     }
 
-    swiperSlideChanged(event: UIEvent) {
-        if (event) return;
-        let currentIndex = this.parentSwiper.getActiveIndex();
-        console.log('swipersSlideChanged hit');
-        if (!this.parentSwiper.isEnd()) {
-            console.log('slideto' + (currentIndex + 1));
-            this.parentSwiper.slideTo(currentIndex + 1);
-        }
+    // swiperSlideChanged(event: UIEvent) {
+    //     if (event) return;
+    //     let currentIndex = this.parentSwiper.getActiveIndex();
+    //     console.log('swipersSlideChanged hit');
+    //     if (!this.parentSwiper.isEnd()) {
+    //         console.log('slideto' + (currentIndex + 1));
+    //         this.parentSwiper.slideTo(currentIndex + 1);
+    //     }
 
 
-    }
+    // }
 
     render() {
 
@@ -55,25 +55,22 @@ export class AppClient {
             <ion-page>
                 <ion-content>
                     <app-title />
-                    <ion-slides class='parentSlider' id='parentSlider'>
+                    <ion-slides pager id='parentSlider'>
                         {this.picturesUrls.map((projet) => {
-                            return <ion-slide>
+                            return <ion-slide class='swiper-slide'>
                                 <div class='verticalDiv'>
 
-                                    <div>
+                                    <div class='flexDiv'>
                                         <img class='logo' src={this.rootPath + projet.client_logo_name + this.fileExtension} />
                                         <div class='textDiv'>{projet.description}</div>
                                     </div>
-                                    <ion-slides>
+                                    <ion-slides pager>
                                         {this.pictures.map((picture) => {
                                             return <ion-slide>
                                                 <lazy-img src={this.rootPath + picture + this.fileExtension} />
                                             </ion-slide>
                                         })}
                                     </ion-slides>
-
-
-
                                 </div>
                             </ion-slide>
                         })}

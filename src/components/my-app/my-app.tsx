@@ -39,23 +39,21 @@ export class MyApp {
     return (
       <ion-app>
         <main>
-          
-          <ion-tabs class="tabs-icon-top tabs-positive tabs">
-            <ion-tab label="Accueil" icon='home' >
-              <app-home />
-            </ion-tab>
-            <ion-tab label="Galerie" icon='images' >
-              <app-photo />
-            </ion-tab>
-            <ion-tab label="Projets" icon='ribbon' >
-              <app-client />
-            </ion-tab>
-            <ion-tab class='tab-document' label="Documents" icon='folder' >
-              <ion-page class='show-page has-header'>
-                <app-title />
-              </ion-page>
-            </ion-tab>
-          </ion-tabs>
+            <ion-tabs class="tabs-icon-top tabs-positive tabs" id='plan2'>
+              <ion-tab label="Accueil" icon='home' >
+                <app-home />
+              </ion-tab>
+              <ion-tab label="Galerie" icon='images' >
+                <app-photo />
+              </ion-tab>
+              <ion-tab label="Projets" icon='ribbon' >
+                <app-client />
+              </ion-tab>
+              <ion-tab class='tab-document' label="Documents" icon='folder' >
+                <app-documents/>
+                
+              </ion-tab>
+            </ion-tabs>
         </main>
       </ion-app>
     );

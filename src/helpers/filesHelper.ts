@@ -5,6 +5,10 @@ export function getRootPath() {
   return './assets/pictures/';
 }
 
+export function getDocumentsRootPath() {
+  return './assets/documents/';
+}
+
 export function getFilesExtension() {
   return '.png';
 }
@@ -26,6 +30,16 @@ export function getScreenShots() {
     new Projet('Ceci est une application pour Enedis pour aider les techniciens à planifier leurs journées','logo_grey','logo_trans'),
     new Projet('Ceci est une application pour Enedis pour aider les techniciens à planifier leurs journées','heavy_image','logo_trans'),
     ];
+
+  return outputArray;
+}
+
+export function getDocuments(){
+  const outputArray = [
+    'file1.pdf',
+    'file2.pdf',
+    'file3.png'
+  ];
 
   return outputArray;
 }

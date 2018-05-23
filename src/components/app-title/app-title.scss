@@ -1,5 +1,9 @@
 
 app-title {
+  .toolbar-background {
+    background-color: var(--app-primary-color) !important;
+  }
+
   ion-title {
     text-align: center;
     font-weight: bold;

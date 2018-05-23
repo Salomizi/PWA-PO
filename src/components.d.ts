@@ -103,6 +103,39 @@ declare global {
 declare global {
 
   namespace StencilComponents {
+    interface AppDocuments {
+
+    }
+  }
+
+  interface HTMLAppDocumentsElement extends StencilComponents.AppDocuments, HTMLStencilElement {}
+
+  var HTMLAppDocumentsElement: {
+    prototype: HTMLAppDocumentsElement;
+    new (): HTMLAppDocumentsElement;
+  };
+  interface HTMLElementTagNameMap {
+    'app-documents': HTMLAppDocumentsElement;
+  }
+  interface ElementTagNameMap {
+    'app-documents': HTMLAppDocumentsElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'app-documents': JSXElements.AppDocumentsAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface AppDocumentsAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
     interface AppFacebookvideo {
 
     }

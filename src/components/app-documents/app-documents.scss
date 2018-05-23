@@ -1,0 +1,20 @@
+app-documents {
+  .margined_thumbnail {
+    margin: 5%;
+  }
+  .rightAligned_button {
+    display: inline-block;
+    margin: auto 1rem;
+    
+  }
+
+  .openButton {
+    text-align: center;
+  }
+  .openImg {
+    color: var(--app-primary-color);
+    font-size: 200%;
+    margin-right: 2%;
+    margin-top: 2%;
+  }
+}
