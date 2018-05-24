@@ -1,11 +1,15 @@
 export class Projet {
-    screenshot_name: string;
+    screenshots: string[];
     description: string;
-    client_logo_name: string;
+    directory_name: string;
 
-    constructor(message: string, screenshot_name: string, client_logo_name: string) {
+    constructor(message: string, screenshot_number: number, directory_name: string) {
         this.description = message;
-        this.screenshot_name = screenshot_name;
-        this.client_logo_name = client_logo_name;
+        this.screenshots = new Array();
+        for (var i = 1; i <= screenshot_number; i++) {
+            this.screenshots.push(String(i));
+        }
+
+        this.directory_name = directory_name;
     }
 }

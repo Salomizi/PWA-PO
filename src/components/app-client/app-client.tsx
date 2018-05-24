@@ -1,6 +1,6 @@
 import { Component, State } from '@stencil/core';
 
-import { getRootPath, getFilesExtension, getScreenShots, getPictures } from '../../helpers/filesHelper';
+import { getProjectsRootPath, getFilesExtension, getProjets } from '../../helpers/filesHelper';
 import { Projet } from '../../model/projet';
 
 @Component({
@@ -14,7 +14,7 @@ export class AppClient {
     @State() rootPath: string;
     @State() fileExtension: string;
 
-    @State() picturesUrls: Projet[];
+    @State() projets: Projet[];
 
     @State() pictures: string[];
 
@@ -22,10 +22,10 @@ export class AppClient {
 
     componentWillLoad() {
         this.fileExtension = getFilesExtension();
-        this.rootPath = getRootPath();
-        this.picturesUrls = getScreenShots();
+        this.rootPath = getProjectsRootPath();
+        this.projets = getProjets();
 
-        this.pictures = getPictures();
+
         // this.parentSwiper = document.getElementById('parentSlider');
 
         // if (this.parentSwiper != null) {
@@ -56,18 +56,18 @@ export class AppClient {
                 <ion-content>
                     <app-title />
                     <ion-slides pager id='parentSlider'>
-                        {this.picturesUrls.map((projet) => {
+                        {this.projets.map((projet) => {
                             return <ion-slide class='swiper-slide'>
                                 <div class='verticalDiv'>
 
                                     <div class='flexDiv'>
-                                        <img class='logo' src={this.rootPath + projet.client_logo_name + this.fileExtension} />
+                                        <img class='logo' src={this.rootPath + projet.directory_name + 'logo' + this.fileExtension} />
                                         <div class='textDiv'>{projet.description}</div>
                                     </div>
                                     <ion-slides pager>
-                                        {this.pictures.map((picture) => {
+                                        {projet.screenshots.map((picture) => {
                                             return <ion-slide>
-                                                <lazy-img src={this.rootPath + picture + this.fileExtension} />
+                                                <lazy-img src={this.rootPath + projet.directory_name + picture + this.fileExtension} />
                                             </ion-slide>
                                         })}
                                     </ion-slides>

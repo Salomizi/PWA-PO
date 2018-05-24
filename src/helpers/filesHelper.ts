@@ -5,6 +5,10 @@ export function getRootPath() {
   return './assets/pictures/';
 }
 
+export function getProjectsRootPath(){
+  return './assets/projets/'
+}
+
 export function getDocumentsRootPath() {
   return './assets/documents/';
 }
@@ -24,11 +28,11 @@ export function getPictures() {
 }
 
 
-export function getScreenShots() {
+export function getProjets() {
   const outputArray = [
-    new Projet('Ceci est une application pour Enedis pour aider les techniciens à planifier leurs journées','logo_white','logo_trans'),
-    new Projet('Ceci est une application pour Enedis pour aider les techniciens à planifier leurs journées','logo_grey','logo_trans'),
-    new Projet('Ceci est une application pour Enedis pour aider les techniciens à planifier leurs journées','heavy_image','logo_trans'),
+    new Projet('Ceci est une application pour Enedis pour aider les techniciens à planifier leurs journées',2, 'maJournee/'),
+    new Projet('Ceci est une application pour Enedis pour aider les techniciens à planifier leurs journées',2,'monBI/'),
+    new Projet('Ceci est une application pour Enedis pour aider les techniciens à planifier leurs journées',2,'dipnn/'),
     ];
 
   return outputArray;
