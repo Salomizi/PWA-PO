@@ -12,7 +12,7 @@ export class AppDocuments {
 
     @State() rootPath: string;
 
-    @State() files: string[];
+    @State() files;
 
     componentWillLoad() {
         this.rootPath = getDocumentsRootPath();
@@ -34,10 +34,10 @@ export class AppDocuments {
 
                         return <ion-item>
                             <ion-thumbnail item-start class='margined_thumbnail'>
-                                <img src={this.rootPath + 'file3.png'} />
+                                <img src={this.rootPath + file.pic} />
                             </ion-thumbnail>
                             <h2>
-                                {file}
+                                {file.doc}
                             </h2>
 
                             <a class='openButton' href={this.rootPath + file}>

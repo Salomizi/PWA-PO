@@ -1,11 +1,11 @@
 
-import  {Projet} from '../model/projet';
+import { Projet } from '../model/projet';
 
 export function getRootPath() {
   return './assets/pictures/';
 }
 
-export function getProjectsRootPath(){
+export function getProjectsRootPath() {
   return './assets/projets/'
 }
 
@@ -30,19 +30,21 @@ export function getPictures() {
 
 export function getProjets() {
   const outputArray = [
-    new Projet('Ceci est une application pour Enedis pour aider les techniciens à planifier leurs journées',2, 'maJournee/'),
-    new Projet('Ceci est une application pour Enedis pour aider les techniciens à planifier leurs journées',2,'monBI/'),
-    new Projet('Ceci est une application pour Enedis pour aider les techniciens à planifier leurs journées',2,'dipnn/'),
-    ];
+    new Projet('Ceci est une application pour Enedis pour aider les techniciens à planifier leurs journées', 2, 'maJournee/'),
+    new Projet('Ceci est une application pour Enedis pour aider les techniciens à planifier leurs journées', 2, 'monBI/'),
+    new Projet('Ceci est une application pour Enedis pour aider les techniciens à planifier leurs journées', 2, 'dipnn/'),
+  ];
 
   return outputArray;
 }
 
-export function getDocuments(){
+export function getDocuments() {
   const outputArray = [
-    'file1.pdf',
-    'file2.pdf',
-    'file3.png'
+    { doc: 'file1.pdf', pic: 'file1.png' },
+
+    { doc: 'file2.pdf', pic: 'file2.png' },
+
+    { doc: 'file3.png', pic: 'file3.png' }
   ];
 
   return outputArray;
