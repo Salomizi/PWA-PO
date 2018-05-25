@@ -40,7 +40,7 @@ export class AppDocuments {
                                 {file.doc}
                             </h2>
 
-                            <a class='openButton' href={this.rootPath + file}>
+                            <a class='openButton' target="_blank" href={this.rootPath + file.doc}>
                                 <ion-icon item-right class='openImg' name='open'> </ion-icon>
                             </a>
                         </ion-item>;

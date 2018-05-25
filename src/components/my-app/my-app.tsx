@@ -39,21 +39,46 @@ export class MyApp {
     return (
       <ion-app>
         <main>
-            <ion-tabs class="tabs-icon-top tabs-positive tabs" id='plan2'>
-              <ion-tab label="Accueil" icon='home' >
-                <app-home />
-              </ion-tab>
-              <ion-tab label="Galerie" icon='images' >
-                <app-photo />
-              </ion-tab>
-              <ion-tab label="Projets" icon='ribbon' >
-                <app-client />
-              </ion-tab>
-              <ion-tab class='tab-document' label="Documents" icon='folder' >
-                <app-documents/>
-                
-              </ion-tab>
-            </ion-tabs>
+          {/* <app-title />
+          <ion-router useHash={false}>
+            <ion-route url='/' component='app-home'></ion-route>
+            <ion-route url='/photo' component='app-photo'></ion-route>
+            <ion-route url='/client' component='app-client'></ion-route>
+            <ion-route url='/documents' component='app-documents'></ion-route>
+          </ion-router>
+          <ion-nav></ion-nav>
+          <app-footer /> */}
+          {/* <app-title/>
+        <stencil-router>
+            <stencil-route url='/' component='app-home' exact={true}>
+            </stencil-route>
+
+            <stencil-route url='/photo' component='app-photo'>
+            </stencil-route>
+            
+            <stencil-route url='/documents' component='app-documents'>
+            </stencil-route>
+            
+            <stencil-route url='/client' component='app-client'>
+            </stencil-route>
+          </stencil-router>
+
+          <app-footer/> */}
+          <ion-tabs class="tabs-icon-top tabs-positive tabs" id='plan2'>
+            <ion-tab label="Accueil" icon='home' >
+              <app-home />
+            </ion-tab>
+            <ion-tab label="Galerie" icon='images' >
+              <app-photo />
+            </ion-tab>
+            <ion-tab label="Projets" icon='ribbon' >
+              <app-client />
+            </ion-tab>
+            <ion-tab class='tab-document' label="Documents" icon='folder' >
+              <app-documents />
+
+            </ion-tab>
+          </ion-tabs>
         </main>
       </ion-app>
     );

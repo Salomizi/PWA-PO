@@ -169,6 +169,39 @@ declare global {
 declare global {
 
   namespace StencilComponents {
+    interface AppFooter {
+
+    }
+  }
+
+  interface HTMLAppFooterElement extends StencilComponents.AppFooter, HTMLStencilElement {}
+
+  var HTMLAppFooterElement: {
+    prototype: HTMLAppFooterElement;
+    new (): HTMLAppFooterElement;
+  };
+  interface HTMLElementTagNameMap {
+    'app-footer': HTMLAppFooterElement;
+  }
+  interface ElementTagNameMap {
+    'app-footer': HTMLAppFooterElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'app-footer': JSXElements.AppFooterAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface AppFooterAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
     interface AppHome {
 
     }
