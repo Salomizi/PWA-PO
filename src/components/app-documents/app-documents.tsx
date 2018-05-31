@@ -36,12 +36,16 @@ export class AppDocuments {
                             <ion-thumbnail item-start class='margined_thumbnail'>
                                 <img src={this.rootPath + file.pic} />
                             </ion-thumbnail>
-                            <h2>
-                                {file.doc}
-                            </h2>
-
-                            <a class='openButton' target="_blank" href={this.rootPath + file.doc}>
-                                <ion-icon item-right class='openImg' name='open'> </ion-icon>
+                            <div class='verticalDiv'>
+                                <h2>
+                                    {file.doc}
+                                </h2>
+                                <h3 class='greyText'>
+                                    {'fichier ' + file.ext}
+                                </h3>
+                            </div>
+                            <a class='openButton' target="_blank" href={this.rootPath + file.doc + '.' + file.ext}>
+                                <ion-icon item-right class='openImg' name='eye'> </ion-icon>
                             </a>
                         </ion-item>;
 

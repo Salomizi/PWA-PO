@@ -28,6 +28,12 @@ export class AppClient {
         this.rootPath = getProjectsRootPath();
         this.projets = getProjets();
 
+    }
+
+    componentDidLoad() {
+        console.log('The component has been rendered');
+
+        
         this.swiperH = new Swiper('.swiper-container-h', {
             spaceBetween: 50,
             pagination: {
@@ -36,7 +42,6 @@ export class AppClient {
             },
         });
         this.swiperV = new Swiper('.swiper-container-v', {
-            direction: 'horizontal',
             spaceBetween: 50,
             pagination: {
                 el: '.swiper-pagination-v',
@@ -44,10 +49,6 @@ export class AppClient {
             },
             nested: true
         });
-    }
-
-    componentDidLoad() {
-        console.log('The component has been rendered');
     }
 
 

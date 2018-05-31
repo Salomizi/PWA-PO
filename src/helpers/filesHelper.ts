@@ -40,11 +40,11 @@ export function getProjets() {
 
 export function getDocuments() {
   const outputArray = [
-    { doc: 'file1.pdf', pic: 'file1.png' },
+    { doc: 'file1',ext:'pdf', pic: 'file1.png' },
 
-    { doc: 'file2.pdf', pic: 'file2.png' },
+    { doc: 'file2',ext:'pdf', pic: 'file2.png' },
 
-    { doc: 'file3.png', pic: 'file3.png' }
+    { doc: 'file3',ext:'png', pic: 'file3.png' }
   ];
 
   return outputArray;
