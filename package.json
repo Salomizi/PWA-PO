@@ -13,18 +13,19 @@
     "serve": "stencil-dev-server",
     "start": "npm run dev",
     "test": "jest --no-cache",
-	"test.watch": "jest --watch --no-cache"
+    "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
     "@angular/core": "^4.4.7",
-	"@ionic/core": "4.0.0-alpha.2",
+    "@ionic-native/core": "^4.2.0",
     "@ionic-native/native-page-transitions": "^4.7.0",
-	"@ionic-native/core": "^4.2.0",
+    "@ionic/core": "4.0.0-alpha.2",
     "@stencil/core": "0.7.24",
     "@stencil/router": "latest",
-	"@stencil/sass": "latest",
-	"micromatch": "^3.1.10",
+    "@stencil/sass": "latest",
+    "micromatch": "^3.1.10",
     "rxjs": "^5.0.1",
+    "swiper": "~4.3.0",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
@@ -32,7 +33,7 @@
     "@stencil/sass": "0.0.3",
     "@stencil/utils": "latest",
     "@types/jest": "^22.2.2",
-	"jest": "^22.4.3"
+    "jest": "^22.4.3"
   },
   "repository": {
     "type": "git",
