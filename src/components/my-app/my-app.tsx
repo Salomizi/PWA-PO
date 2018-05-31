@@ -39,7 +39,7 @@ export class MyApp {
     return (
       <ion-app>
         <main>
-          {/* <app-title />
+          <app-title />
           <ion-router useHash={false}>
             <ion-route url='/' component='app-home'></ion-route>
             <ion-route url='/photo' component='app-photo'></ion-route>
@@ -47,7 +47,7 @@ export class MyApp {
             <ion-route url='/documents' component='app-documents'></ion-route>
           </ion-router>
           <ion-nav></ion-nav>
-          <app-footer /> */}
+          <app-footer />
           {/* <app-title/>
         <stencil-router>
             <stencil-route url='/' component='app-home' exact={true}>
@@ -64,7 +64,7 @@ export class MyApp {
           </stencil-router>
 
           <app-footer/> */}
-          <ion-tabs class="tabs-icon-top tabs-positive tabs" id='plan2'>
+          {/* <ion-tabs class="tabs-icon-top tabs-positive tabs" id='plan2'>
             <ion-tab label="Accueil" icon='home' >
               <app-home />
             </ion-tab>
@@ -78,7 +78,7 @@ export class MyApp {
               <app-documents />
 
             </ion-tab>
-          </ion-tabs>
+          </ion-tabs> */}
         </main>
       </ion-app>
     );

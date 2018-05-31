@@ -2,6 +2,7 @@ import { Component, State } from '@stencil/core';
 
 import { getProjectsRootPath, getFilesExtension, getProjets } from '../../helpers/filesHelper';
 import { Projet } from '../../model/projet';
+import Swiper from 'swiper';
 
 @Component({
     tag: 'app-client',
@@ -41,7 +42,7 @@ export class AppClient {
                 el: '.swiper-pagination-v',
                 clickable: true,
             },
-            nested:true
+            nested: true
         });
     }
 
