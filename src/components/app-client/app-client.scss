@@ -5,6 +5,7 @@ app-client {
   }
   .textDiv {
     display: inline-block;
+    color: white;
   }
   .logo {
     display: inline-block;
@@ -21,15 +22,17 @@ app-client {
     width: 100%;
     height: 100%;
   }
+
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: black;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    flex-direction: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -40,6 +43,8 @@ app-client {
     align-items: center;
   }
   .swiper-container-v {
-    background: #eee;
+    display: flex;
+    flex-direction: column;
   }
+
 }

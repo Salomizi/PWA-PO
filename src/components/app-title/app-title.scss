@@ -1,9 +1,13 @@
-
 app-title {
-  .toolbar-background {
-    background-color: var(--app-primary-color) !important;
+  .degrade {
+    background-image: -moz-linear-gradient(30deg, var(--app-secondary-color), var(--app-third-color));
+    background-image: -webkit-linear-gradient(30deg, var(--app-secondary-color), var(--app-third-color));
+    background-image: -o-linear-gradient(30deg, var(--app-secondary-color), var(--app-third-color));
+    background-image: linear-gradient(60deg, var(--app-secondary-color), var(--app-third-color));
   }
-
+  .toolbar-background {
+    background-color: transparent !important;
+  }
   ion-title {
     text-align: center;
     font-weight: bold;
@@ -12,8 +16,7 @@ app-title {
     display: flex
   }
   .imgToolBar {
-    vertical-align: middle;
-    // .md & {
+    vertical-align: middle; // .md & {
     //   height: $toolbar-md-height;
     // }
     // .ios & {
@@ -22,7 +25,7 @@ app-title {
     // .wp & {
     //   height: $toolbar-wp-height;
     // }
-    height:56px;
+    height: 56px;
   }
   ion-button {
     max-height: 50%;

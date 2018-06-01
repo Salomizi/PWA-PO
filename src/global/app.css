@@ -8,4 +8,6 @@ body {
 :root {
   --app-primary-color: rgb(117, 105, 105);
   --app-secondary-color:#EF7D00;
+  
+  --app-third-color:#D11B29;
 }

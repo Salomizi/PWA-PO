@@ -11,19 +11,17 @@ export class AppTitle {
     @State() fileExtension: string = '.png';
 
     @State() mfPictureUrl: string;
-    @State() mailPictureUrl: string;
 
 
     componentWillLoad() {
-        this.mfPictureUrl = this.rootPath + "logo_trans" + this.fileExtension;
-        this.mailPictureUrl = this.rootIconPath + "email.svg";
+        this.mfPictureUrl = this.rootIconPath + "MobileFactory_Logo.svg";
     }
 
     render() {
 
         return (
 
-            <ion-header class="bar-header bar-stable headerToolbar " >
+            <ion-header class="bar-header bar-stable headerToolbar degrade" >
                 <ion-toolbar class="toolbar" color='primary' >
                     <img class="imgToolBar" src={this.mfPictureUrl}> </img>
                     <ion-title >La Mobile Factory</ion-title>

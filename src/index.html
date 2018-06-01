@@ -42,6 +42,7 @@
   <meta http-equiv="x-ua-compatible" content="IE=Edge">
 
   <link href="/build/app.css" rel="stylesheet">
+  <link href="/build/swiper.min.css" rel="stylesheet">
   <script src="/build/app.js"></script>
 
   <link rel="apple-touch-icon" href="/assets/icon/icon.png">
@@ -50,11 +51,20 @@
 </head>
 
 <body>
-
   <span class="app-container">
     <my-app class="mainApp"></my-app>
   </span>
-
+  <!-- <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }).catch(function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    }
+  </script> -->
 
 
 </body>
