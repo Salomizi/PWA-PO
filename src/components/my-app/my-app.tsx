@@ -1,4 +1,5 @@
-import { Component, Prop, Listen } from '@stencil/core';
+import { Component, Listen, Prop } from '@stencil/core';
+
 import { ToastController } from '@ionic/core';
 
 @Component({
@@ -13,9 +14,9 @@ export class MyApp {
     /*
       Handle service worker updates correctly.
       This code will show a toast letting the
-      user of the PWA know that there is a 
+      user of the PWA know that there is a
       new version available. When they click the
-      reload button it then reloads the page 
+      reload button it then reloads the page
       so that the new service worker can take over
       and serve the fresh content
     */
@@ -55,10 +56,10 @@ export class MyApp {
 
             <stencil-route url='/photo' component='app-photo'>
             </stencil-route>
-            
+
             <stencil-route url='/documents' component='app-documents'>
             </stencil-route>
-            
+
             <stencil-route url='/client' component='app-client'>
             </stencil-route>
           </stencil-router>

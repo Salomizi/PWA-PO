@@ -14,23 +14,23 @@ export class AppFooter {
     render() {
 
         return (
-            <ion-footer>
+            <ion-footer class="app-footer">
 
                 <ion-button href='/'>
-                    A
-                    </ion-button>
+                    <ion-icon name="home"></ion-icon>
+                </ion-button>
 
                 <ion-button href='/photo'>
-                    B
-                    </ion-button>
+                    <ion-icon name="images"></ion-icon>
+                </ion-button>
 
                 <ion-button href='/client'>
-                    B
-                    </ion-button>
+                    <ion-icon name="ribbon"></ion-icon>
+                </ion-button>
 
                 <ion-button href='/documents'>
-                    B
-                    </ion-button>
+                    <ion-icon name="folder"></ion-icon>
+                </ion-button>
 
             </ion-footer>
 

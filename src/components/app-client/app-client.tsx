@@ -1,6 +1,6 @@
-import { Component, State } from '@stencil/core';
+import { getFilesExtension, getProjectsRootPath, getProjets } from '../../helpers/filesHelper';
 
-import { getProjectsRootPath, getFilesExtension, getProjets } from '../../helpers/filesHelper';
+import { Component } from '@stencil/core';
 import { Projet } from '../../model/projet';
 import Swiper from 'swiper';
 
@@ -10,38 +10,32 @@ import Swiper from 'swiper';
 })
 export class AppClient {
 
-    @State() element;
-    @State() rootPath: string;
-    @State() fileExtension: string;
+    protected element;
+    protected rootPath: string;
+    protected fileExtension: string;
 
-    @State() projets: Projet[];
+    protected projets: Projet[];
 
-    @State() pictures: string[];
+    protected pictures: string[];
 
-
-
-    swiperH: Swiper;
-    swiperV: Swiper;
+    protected horizontalSwiper: Swiper;
+    protected verticalSwiper: Swiper;
 
     componentWillLoad() {
         this.fileExtension = getFilesExtension();
         this.rootPath = getProjectsRootPath();
         this.projets = getProjets();
-
     }
 
     componentDidLoad() {
-        console.log('The component has been rendered');
-
-
-        this.swiperH = new Swiper('.swiper-container-h', {
+        this.horizontalSwiper = new Swiper('.swiper-container-h', {
             spaceBetween: 50,
             pagination: {
                 el: '.swiper-pagination-h',
                 clickable: true,
             },
         });
-        this.swiperV = new Swiper('.swiper-container-v', {
+        this.verticalSwiper = new Swiper('.swiper-container-v', {
             spaceBetween: 50,
             pagination: {
                 el: '.swiper-pagination-v',
@@ -119,27 +113,6 @@ export class AppClient {
                                     </div>
                                 </div>
                             </div>
-                            {/* {this.projets.map((projet) => {
-                                return <div class="swiper-slide">
-                                    <div class='verticalDiv'>
-                                        <div class='flexDiv'>
-                                            <img class='logo' src={this.rootPath + projet.directory_name + 'logo' + this.fileExtension} />
-                                            <div class='textDiv'>{projet.description}</div>
-                                        </div>
-                                        <div class="swiper-container swiper-container-v">
-                                            <div class="swiper-wrapper">
-                                                {projet.screenshots.map((picture) => {
-                                                    return <div class="swiper-slide">
-                                                        <lazy-img src={this.rootPath + projet.directory_name + picture + this.fileExtension} />
-                                                    </div>
-                                                })}
-                                            </div>
-                                            <div class="swiper-pagination swiper-pagination-v"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            })} */}
-
                         </div>
                         <div class="swiper-pagination swiper-pagination-h"></div>
                     </div>
