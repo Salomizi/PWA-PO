@@ -2,8 +2,12 @@ const sass = require('@stencil/sass');
 
 exports.config = {
 	plugins: [
-		sass()
-	],
+    sass({
+      injectGlobalPaths: [
+        'node_modules/swiper/dist/css/swiper.min.css'
+      ]
+    })
+  ],
 	collections: [
 		{ name: '@stencil/router' },
 		{ name: '@ionic/core' }
