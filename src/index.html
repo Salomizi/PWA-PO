@@ -4,28 +4,36 @@
 <head>
 
   <style>
-    @media all and (min-width: 600px) {
-      body {
-        background-image: url('./assets/pictures/background_desktop.png');
-        display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @media all and (min-width: 800px) {
+      body,
+      html {
+        height: 100%;
+        margin: 0;
       }
-        .app{
-          background: transparent;
-        display:flex;
-          width:30%;
-          height:80%;
-    text-align: center;
-        }
-        .mainApp{
-          display:flex;
-        }
+      .body-background {
+        background: url('./assets/pictures/background_desktop.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: 100vw 100vh;
+        background-attachment: fixed;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+      }
+      .app {
+        background: transparent;
+        display: flex;
+        width: 16%;
+        height: 37%;
+        margin: auto;
+      }
+      .mainApp {
+        display: flex;
+      }
     }
+
   </style>
 
   <meta charset="utf-8">
@@ -50,21 +58,22 @@
   <link rel="manifest" href="/manifest.json">
 </head>
 
-<body>
+<body class='body-background'>
   <span class="app-container">
     <my-app class="mainApp"></my-app>
+    <!--<script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }).catch(function(err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      }
+    </script> -->
   </span>
-  <!-- <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js').then(function(registration) {
-        // Registration was successful
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }).catch(function(err) {
-        // registration failed :(
-        console.log('ServiceWorker registration failed: ', err);
-      });
-    }
-  </script> -->
+   
 
 
 </body>
