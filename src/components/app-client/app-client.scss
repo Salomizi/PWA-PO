@@ -10,10 +10,9 @@ app-client {
   .logo {
     display: inline-block;
     max-height: 4rem;
+    margin-top: 0.5rem;
   }
   .flexDiv {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     display: flex;
     align-self: flex-start;
     width: 100%
@@ -22,7 +21,6 @@ app-client {
     width: 100%;
     height: 100%;
   }
-
   .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -46,5 +44,19 @@ app-client {
     display: flex;
     flex-direction: column;
   }
-
+  .weloveaero {
+    background: #C62731;
+  }
+  .activDos {
+    background: #E9195F;
+  }
+  .bforbank {
+    background: #493628;
+  }
+  .maflotte {
+    background: #005BBB;
+  }
+  .suez {
+    background: #00063F;
+  }
 }

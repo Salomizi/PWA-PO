@@ -16,7 +16,9 @@ app-title {
     display: flex
   }
   .imgToolBar {
-    vertical-align: middle; // .md & {
+    vertical-align: middle;
+
+     // .md & {
     //   height: $toolbar-md-height;
     // }
     // .ios & {
@@ -25,7 +27,7 @@ app-title {
     // .wp & {
     //   height: $toolbar-wp-height;
     // }
-    height: 56px;
+    height: 44px;
   }
   ion-button {
     max-height: 50%;

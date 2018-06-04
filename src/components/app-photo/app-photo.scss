@@ -1,34 +1,28 @@
 app-photo {
-    .scroll-inner {
+  .scroll-inner {
+    height: 100%;
+    ion-slides {
+      height: 100%;
+      .swiper-container {
         height: 100%;
-
-        ion-slides {
-            height: 100%;
-
-            .swiper-container {
-                height: 100%;
-
-                ion-slide {
-                    background-color: var(--app-secondary-color);
-                }
-
-                lazy-img {
-                    img {
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                    }
-                }
-
-                .download-link {
-                  position: absolute;
-                  top: 20px;
-                  right: 20px;
-
-                  img {
-                    max-height: 30px;
-                  }
-                }
-            }
+        ion-slide {
+          background-color: var(--app-primary-color);
         }
+        lazy-img {
+          img {
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+        .download-link {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          img {
+            max-height: 30px;
+          }
+        }
+      }
     }
+  }
 }

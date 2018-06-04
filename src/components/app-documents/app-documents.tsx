@@ -29,7 +29,7 @@ export class AppDocuments {
 
             <ion-content>
                 <app-title />
-                <ion-list>
+                <ion-list >
                     {this.files ? this.files.map((file) => {
 
                         return <ion-item>

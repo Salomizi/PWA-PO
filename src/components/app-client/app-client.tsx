@@ -58,57 +58,112 @@ export class AppClient {
 
                     <div class="swiper-container swiper-container-h">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide airbus">
+                            <div class={"swiper-slide " + this.projets[0].directory_name}>
+                                <img class='logo' src={this.rootPath + this.projets[0].directory_name + '/logo' + this.fileExtension} />
                                 <div class='verticalDiv'>
                                     <div class='flexDiv'>
-                                        <img class='logo' src={this.rootPath + this.projets[0].directory_name + 'logo' + this.fileExtension} />
-                                        <h5 class='textDiv'>{this.projets[0].description}</h5>
+                                        <h6 class='textDiv'>{this.projets[0].description}</h6>
                                     </div>
                                 </div>
                                 <div class="swiper-container swiper-container-v">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <lazy-img src={this.rootPath + this.projets[0].directory_name + this.projets[0].screenshots[0] + this.fileExtension} />
+                                            <lazy-img src={this.rootPath + this.projets[0].directory_name + '/' + this.projets[0].screenshots[0] + '.jpg'} />
                                         </div>
                                         <div class="swiper-slide">
-                                            <lazy-img src={this.rootPath + this.projets[0].directory_name + this.projets[0].screenshots[1] + this.fileExtension} />
+                                            <lazy-img src={this.rootPath + this.projets[0].directory_name + '/' + this.projets[0].screenshots[1] + '.jpg'} />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <lazy-img src={this.rootPath + this.projets[0].directory_name + '/' + this.projets[0].screenshots[2] + '.jpg'} />
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
-                            <div class="swiper-slide activdos">
+                            <div class={"swiper-slide " + this.projets[1].directory_name}>
+                                <img class='logo' src={this.rootPath + this.projets[1].directory_name + '/logo' + this.fileExtension} />
                                 <div class='verticalDiv'>
                                     <div class='flexDiv'>
-                                        <img class='logo' src={this.rootPath + this.projets[1].directory_name + 'logo' + this.fileExtension} />
-                                        <h5 class='textDiv'>{this.projets[1].description}</h5>
+                                        <h6 class='textDiv'>{this.projets[1].description}</h6>
                                     </div>
                                 </div>
                                 <div class="swiper-container swiper-container-v">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <lazy-img src={this.rootPath + this.projets[1].directory_name + this.projets[1].screenshots[0] + this.fileExtension} />
+                                            <lazy-img src={this.rootPath + this.projets[1].directory_name + '/' + this.projets[1].screenshots[0] + this.fileExtension} />
                                         </div>
                                         <div class="swiper-slide">
-                                            <lazy-img src={this.rootPath + this.projets[1].directory_name + this.projets[1].screenshots[0] + this.fileExtension} />
+                                            <lazy-img src={this.rootPath + this.projets[1].directory_name + '/' + this.projets[1].screenshots[1] + this.fileExtension} />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <lazy-img src={this.rootPath + this.projets[1].directory_name + '/' + this.projets[1].screenshots[2] + this.fileExtension} />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <lazy-img src={this.rootPath + this.projets[1].directory_name + '/' + this.projets[1].screenshots[3] + this.fileExtension} />
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide bforbank">
+
+                            <div class={"swiper-slide " + this.projets[2].directory_name}>
+                                <img class='logo' src={this.rootPath + this.projets[2].directory_name + '/logo' + this.fileExtension} />
                                 <div class='verticalDiv'>
                                     <div class='flexDiv'>
-                                        <img class='logo' src={this.rootPath + this.projets[2].directory_name + 'logo' + this.fileExtension} />
-                                        <h5 class='textDiv'>{this.projets[2].description}</h5>
+                                        <h6 class='textDiv'>{this.projets[2].description}</h6>
                                     </div>
                                 </div>
                                 <div class="swiper-container swiper-container-v">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <lazy-img src={this.rootPath + this.projets[2].directory_name + this.projets[2].screenshots[0] + this.fileExtension} />
+                                            <lazy-img src={this.rootPath + this.projets[2].directory_name + '/' + this.projets[2].screenshots[0] + this.fileExtension} />
                                         </div>
                                         <div class="swiper-slide">
-                                            <lazy-img src={this.rootPath + this.projets[2].directory_name + this.projets[2].screenshots[1] + this.fileExtension} />
+                                            <lazy-img src={this.rootPath + this.projets[2].directory_name + '/' + this.projets[2].screenshots[1] + this.fileExtension} />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <lazy-img src={this.rootPath + this.projets[2].directory_name + '/' + this.projets[2].screenshots[2] + this.fileExtension} />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class={"swiper-slide " + this.projets[3].directory_name}>
+                                <img class='logo' src={this.rootPath + this.projets[3].directory_name + '/logo' + this.fileExtension} />
+                                <div class='verticalDiv'>
+                                    <div class='flexDiv'>
+                                        <h6 class='textDiv'>{this.projets[3].description}</h6>
+                                    </div>
+                                </div>
+                                <div class="swiper-container swiper-container-v">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <lazy-img src={this.rootPath + this.projets[3].directory_name + '/' + this.projets[3].screenshots[0] + this.fileExtension} />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <lazy-img src={this.rootPath + this.projets[3].directory_name + '/' + this.projets[3].screenshots[1] + this.fileExtension} />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <lazy-img src={this.rootPath + this.projets[3].directory_name + '/' + this.projets[3].screenshots[2] + this.fileExtension} />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class={"swiper-slide " + this.projets[4].directory_name}>
+                                <img class='logo' src={this.rootPath + this.projets[4].directory_name + '/logo.svg'} />
+                                <div class='verticalDiv'>
+                                    <div class='flexDiv'>
+                                        <h6 class='textDiv'>{this.projets[4].description}</h6>
+                                    </div>
+                                </div>
+                                <div class="swiper-container swiper-container-v">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <lazy-img src={this.rootPath + this.projets[4].directory_name + '/' + this.projets[4].screenshots[0] + '.jpg'} />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <lazy-img src={this.rootPath + this.projets[4].directory_name + '/' + this.projets[4].screenshots[1] + '.jpg'} />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <lazy-img src={this.rootPath + this.projets[4].directory_name + '/' + this.projets[4].screenshots[2] + '.jpg'} />
                                         </div>
                                     </div>
                                 </div>

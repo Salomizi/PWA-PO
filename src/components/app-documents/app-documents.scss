@@ -1,6 +1,6 @@
 app-documents {
   .margined_thumbnail {
-    margin: 5%;
+    margin-right: 2%;
   }
   .openButton {
     position: absolute;
@@ -18,5 +18,11 @@ app-documents {
   }
   .greyText {
     color: var(--app-primary-color);
+  }
+  ion-list .item {
+    padding: 0;
+  }
+  .padded_top {
+    padding-top: 1rem;
   }
 }
