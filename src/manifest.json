@@ -1,7 +1,7 @@
 {
   "name": "MobileFactory App",
   "short_name": "MF APP",
-  "start_url": "/",
+  "start_url": "index.html",
   "display": "standalone",
   "icons": [{
     "src": "assets/icon/icon.png",
