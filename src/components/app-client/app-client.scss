@@ -10,6 +10,7 @@ app-client {
   .logo {
     display: inline-block;
     max-height: 4rem;
+    max-width: 4rem;
     margin-top: 0.5rem;
   }
   .flexDiv {
@@ -23,7 +24,7 @@ app-client {
   }
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 1rem;
     background: black;
     /* Center slide text vertically */
     display: -webkit-box;
@@ -44,6 +45,7 @@ app-client {
     display: flex;
     flex-direction: column;
   }
+  
   .weloveaero {
     background: #C62731;
   }
