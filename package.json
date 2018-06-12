@@ -16,25 +16,25 @@
     "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
-    "@angular/core": "^4.4.7",
-    "@ionic-native/core": "^4.2.0",
-    "@ionic-native/native-page-transitions": "^4.7.0",
+    "@angular/core": "4.4.7",
+    "@ionic-native/core": "4.2.0",
+    "@ionic-native/native-page-transitions": "4.7.0",
     "@ionic/core": "4.0.0-alpha.2",
     "@stencil/core": "0.7.24",
-    "@stencil/router": "latest",
-    "@stencil/sass": "latest",
+    "@stencil/router": "0.1.7",
+    "@stencil/sass": "0.0.5",
     "@types/swiper": "4.2.0",
-    "micromatch": "^3.1.10",
-    "rxjs": "^5.0.1",
+    "micromatch": "3.1.10",
+    "rxjs": "5.0.1",
     "swiper": "~4.3.0",
-    "zone.js": "^0.8.4"
+    "zone.js": "0.8.4"
   },
   "devDependencies": {
-    "@stencil/dev-server": "latest",
+    "@stencil/dev-server": "0.0.18",
     "@stencil/sass": "0.0.3",
-    "@stencil/utils": "latest",
-    "@types/jest": "^22.2.2",
-    "jest": "^22.4.3"
+    "@stencil/utils": "0.0.4",
+    "@types/jest": "22.2.2",
+    "jest": "22.4.3"
   },
   "repository": {
     "type": "git",
