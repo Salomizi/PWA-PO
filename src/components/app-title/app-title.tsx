@@ -25,7 +25,7 @@ export class AppTitle {
                 <ion-toolbar class="toolbar" color='primary' >
                     <img class="imgToolBar" src={this.mfPictureUrl}> </img>
                     <ion-title >La Mobile Factory</ion-title>
-                    <app-contact />
+                    <app-contact class="icon-contact"/>
                 </ion-toolbar>
             </ion-header>
         );

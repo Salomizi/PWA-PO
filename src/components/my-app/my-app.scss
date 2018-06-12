@@ -1,8 +1,10 @@
 my-app {
 
- 
+  ion-nav {
+    margin-bottom: 48px;
+  }
+
   ion-content {
     position: static;
   }
-
 }

@@ -11,12 +11,14 @@ app-title {
   ion-title {
     text-align: center;
     font-weight: bold;
+    width: 50%
   }
   .toolbar-content {
     display: flex
   }
   .imgToolBar {
     vertical-align: middle;
+    width: 20%;
 
      // .md & {
     //   height: $toolbar-md-height;
@@ -27,8 +29,17 @@ app-title {
     // .wp & {
     //   height: $toolbar-wp-height;
     // }
+    max-height: 2rem;
     height: 44px;
   }
+  .icon-contact {
+     .ios & {
+       right: 0;
+       position: absolute;
+       height: 100%;
+       transform: translateY(12%);
+     }
+   }
   ion-button {
     max-height: 50%;
   }
@@ -38,4 +49,5 @@ app-title {
     vertical-align: middle;
     background-color: var(--app-secondary-color);
   }
+  
 }
