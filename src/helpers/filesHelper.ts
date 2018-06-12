@@ -19,9 +19,9 @@ export function getFilesExtension() {
 
 export function getPictures() {
   const outputArray = [
-    'logo_white',
-    'logo_grey',
-    'heavy_image'
+    'photoGroupe',
+    'frise',
+    'logo'
   ];
 
   return outputArray;
@@ -42,11 +42,10 @@ export function getProjets() {
 
 export function getDocuments() {
   const outputArray = [
-    { doc: 'file1', ext: 'pdf', pic: 'file1.png' },
+    { doc: 'Digital-Interaction', ext: 'pdf', pic: 'Digital-Interaction---Sopra Steria---V2018.png' },
 
-    { doc: 'file2', ext: 'pdf', pic: 'file2.png' },
+    { doc: 'MobileFactory', ext: 'pdf', pic: 'Sopra Steria_MobileFactory-V2018.png' }
 
-    { doc: 'file3', ext: 'png', pic: 'file3.png' }
   ];
 
   return outputArray;

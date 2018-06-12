@@ -1,27 +1,25 @@
 import { Component } from '@stencil/core';
 
-import { getRootPath } from '../../helpers/filesHelper';
 @Component({
   tag: 'app-presentation',
   styleUrl: 'app-presentation.scss'
 })
 export class AppPresentation {
 
-
-  private rootPath: string;
-  componentWillLoad() {
-
-    this.rootPath = getRootPath();
-  }
-
   render() {
 
     return (
-      <div>
-        <img src={this.rootPath + 'PUBG.jpg'} />
-        <p>
-          Bienvenue sur l'application (Progressive Web App) de La Mobile Factory by SopraSteria !
-          </p>
+      <div class='margined-div'>
+        <h2>
+          Bienvenue sur l'application de La Mobile Factory by SopraSteria !
+          </h2>
+        <h5>
+          La Mobile Factory, centralisée à Nantes, Toulouse et Noïda, regroupe des experts en technologies mobiles capables de réaliser des projets sur les deux principales plateformes.
+          Sa capacité à suivre un projet de bout en bout et d'avoir un avis d'expert sur le sujet permet de traiter au mieux les demandes clients.
+        </h5>
+        <h6>
+          Cette application est une Progressive Web App réalisée en Stencil.
+          </h6>
 
       </div>
 
