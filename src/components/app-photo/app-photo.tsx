@@ -1,6 +1,5 @@
 import { Component, State } from '@stencil/core';
-
-import { getPictures, getRootPath, getFilesExtension } from '../../helpers/filesHelper';
+import { getFilesExtension, getPictures, getRootPath } from '../../helpers/filesHelper';
 
 @Component({
     tag: 'app-photo',
@@ -28,9 +27,8 @@ export class AppPhoto {
     render() {
 
         return (
-        
+
             <ion-content>
-                <app-title/>
                 <ion-slides>
                     {this.picturesUrls.map((url, index) => {
                         return <ion-slide>
@@ -42,7 +40,7 @@ export class AppPhoto {
                     })}
                 </ion-slides>
             </ion-content>
-        
+
         );
     }
 }

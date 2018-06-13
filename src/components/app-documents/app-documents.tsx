@@ -1,6 +1,5 @@
 import { Component, State } from '@stencil/core';
-
-import { getDocumentsRootPath, getDocuments } from '../../helpers/filesHelper';
+import { getDocuments, getDocumentsRootPath } from '../../helpers/filesHelper';
 
 @Component({
     tag: 'app-documents',
@@ -28,7 +27,6 @@ export class AppDocuments {
         return (
 
             <ion-content>
-                <app-title />
                 <ion-list >
                     {this.files ? this.files.map((file) => {
 

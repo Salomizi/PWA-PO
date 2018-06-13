@@ -54,7 +54,6 @@ export class AppClient {
         return (
             <ion-page>
                 <ion-content>
-                    <app-title />
 
                     <div class="swiper-container swiper-container-h">
                         <div class="swiper-wrapper">
