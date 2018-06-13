@@ -3,12 +3,10 @@ app-client {
     height: 100%;
     display: flex;
     flex-direction: column;
-
     .swiper-container {
       width: 100%;
       height: 100%;
     }
-
     lazy-img {
       height: 100%;
       img {
@@ -18,6 +16,9 @@ app-client {
   }
   .textDiv {
     color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
   }
   .logo {
     max-height: 4rem;
@@ -47,7 +48,6 @@ app-client {
     display: flex;
     flex-direction: column;
   }
-
   .weloveaero {
     background: #C62731;
   }
@@ -60,7 +60,7 @@ app-client {
   .maflotte {
     background: #005BBB;
   }
-  .suez {
-    background: #00063F;
+  .lighthouse {
+    background: #00205B;
   }
 }

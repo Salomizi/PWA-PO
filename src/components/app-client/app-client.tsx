@@ -62,7 +62,7 @@ export class AppClient {
                                 <img class='logo' src={this.rootPath + this.projets[0].directory_name + '/logo' + this.fileExtension} />
                                 <div class='verticalDiv'>
                                     <div class='flexDiv'>
-                                        <h6 class='textDiv'>{this.projets[0].description}</h6>
+                                        <div class='textDiv'>{this.projets[0].description}</div>
                                     </div>
                                 </div>
                                 <div class="swiper-container swiper-container-v">
@@ -84,7 +84,7 @@ export class AppClient {
                                 <img class='logo' src={this.rootPath + this.projets[1].directory_name + '/logo' + this.fileExtension} />
                                 <div class='verticalDiv'>
                                     <div class='flexDiv'>
-                                        <h6 class='textDiv'>{this.projets[1].description}</h6>
+                                        <div class='textDiv'>{this.projets[1].description}</div>
                                     </div>
                                 </div>
                                 <div class="swiper-container swiper-container-v">
@@ -130,7 +130,7 @@ export class AppClient {
                                 <img class='logo' src={this.rootPath + this.projets[3].directory_name + '/logo' + this.fileExtension} />
                                 <div class='verticalDiv'>
                                     <div class='flexDiv'>
-                                        <h6 class='textDiv'>{this.projets[3].description}</h6>
+                                        <div class='textDiv'>{this.projets[3].description}</div>
                                     </div>
                                 </div>
                                 <div class="swiper-container swiper-container-v">
@@ -151,7 +151,7 @@ export class AppClient {
                                 <img class='logo' src={this.rootPath + this.projets[4].directory_name + '/logo.svg'} />
                                 <div class='verticalDiv'>
                                     <div class='flexDiv'>
-                                        <h6 class='textDiv'>{this.projets[4].description}</h6>
+                                        <div class='textDiv'>{this.projets[4].description}</div>
                                     </div>
                                 </div>
                                 <div class="swiper-container swiper-container-v">
