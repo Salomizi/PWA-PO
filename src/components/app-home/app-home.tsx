@@ -9,14 +9,13 @@ export class AppHome {
 
   render() {
     return (
-      
-        <ion-content class="has-header">
-        <app-title />
+
+        <ion-content>
           <app-presentation />
-         
+
           <app-facebookvideo/>
         </ion-content>
-      
+
 
     );
   }
