@@ -14,12 +14,17 @@ export class AppPresentation {
           Bienvenue sur l'application de La Mobile Factory by SopraSteria !
           </h2>
         <h5>
-          La Mobile Factory, centralisée à Nantes, Toulouse et Noïda, regroupe des experts en technologies mobiles capables de réaliser des projets sur les deux principales plateformes.
-          Sa capacité à suivre un projet de bout en bout et d'avoir un avis d'expert sur le sujet permet de traiter au mieux les demandes clients.
+          La Mobile Factory est une équipe d'expertise dans la réalisation des nouvelles interfaces digitales : la digital interaction (Mobilité, AR, VR, UX Design)
+           Structurée en esprit "start-up dans l'entreprise", elle accompagne nos grands comptes dans leur transformation digitale.
+        </h5>
+        <h5>
+          Elle offre une ligne de services dans une approche globale, itérative, industrialisée et centrée utilisateur.
+          Aujourd'hui, elle compte  70 ingénieurs sur les sites de Toulouse, Nantes et Noida et conclut 2017 en réalisant plus de 40 apps mobiles.
         </h5>
         <h6>
-          Cette application est une Progressive Web App réalisée en Stencil.
+          Cette application est une Progressive Web App, ajoutez la sur votre écran d'accueil!
           </h6>
+
 
       </div>
 
