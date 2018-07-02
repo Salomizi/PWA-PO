@@ -8,8 +8,11 @@ app-photo {
         ion-slide {
           background-color: var(--app-primary-color);
         }
-        lazy-img {
+        .lazy-img-photo {
+          height: 100%;
+          display:flex;
           img {
+            align-self: center;
             background-size: contain;
             background-repeat: no-repeat;
           }

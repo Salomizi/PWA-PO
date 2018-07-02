@@ -7,6 +7,12 @@ app-client {
       width: 100%;
       height: 100%;
     }
+    .swipper-slide img{
+      height:auto;
+      max-height:100%;
+      max-width:auto;
+      width:auto;
+    }
     lazy-img {
       height: 100%;
       img {
@@ -21,9 +27,11 @@ app-client {
     font-size: 0.7rem;
   }
   .logo {
-    height: 4rem;
-    width: 4rem;
-    margin-top: 0.5rem;
+    max-height: 20%;
+    max-width: 20%;
+    height: 3rem;
+    width: 3rem;
+    margin: 1.3rem;
   }
   .flexDiv {
     display: flex;

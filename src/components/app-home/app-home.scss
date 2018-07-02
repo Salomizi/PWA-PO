@@ -1,7 +1,9 @@
 app-home {
 
-  ion-scroll {
-
+  
+.scroll-inner {
+  height:100%;
+}
     p {
       font-weight: bold;
     }
@@ -15,7 +17,7 @@ app-home {
     }
 
     
-  }
+  
  
 }
 
