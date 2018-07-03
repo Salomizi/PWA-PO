@@ -30,12 +30,12 @@ export class AppPhoto {
 
             <ion-content>
                 <ion-slides>
-                    {this.picturesUrls.map((url, index) => {
+                    {this.picturesUrls.map((url) => {
                         return <ion-slide>
                             <lazy-img class="lazy-img-photo" src={this.rootPath + url + this.fileExtension}></lazy-img>
-                            <a class="download-link" target="_self" href={this.rootPath + url + this.fileExtension} download={index}>
+                            {/* <a class="download-link" target="_self" href={this.rootPath + url + this.fileExtension} download={index}>
                               <img src="./assets/icon/ic_file_download_black.svg"/>
-                            </a>
+                            </a> */}
                         </ion-slide>
                     })}
                 </ion-slides>

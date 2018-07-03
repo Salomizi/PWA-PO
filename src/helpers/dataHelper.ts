@@ -20,13 +20,19 @@ export function getFilesExtension() {
 export function getPictures() {
   const outputArray = [
     'photoGroupe',
-    'logo',
     '1',
     '2',
     '3',
     '4',
     '5',
-    '6'
+    '6',
+    '7',
+    '8', 
+    '9', 
+    '10', 
+    '11', 
+    '12', 
+    '13'
   ];
 
   return outputArray;
@@ -50,7 +56,7 @@ export function getDocuments() {
     { doc: 'Digital-Interaction', ext: 'pdf', pic: 'Digital-Interaction---Sopra Steria---V2018.png' },
 
     { doc: 'MobileFactory', ext: 'pdf', pic: 'Sopra Steria_MobileFactory-V2018.png' },
-    
+
     { doc: 'frise', ext: 'jpg', pic: 'frise.png' }
 
   ];
