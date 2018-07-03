@@ -1,5 +1,5 @@
 import { Component, State } from '@stencil/core';
-import { getDocuments, getDocumentsRootPath } from '../../helpers/filesHelper';
+import { getDocuments, getDocumentsRootPath } from '../../helpers/dataHelper';
 
 @Component({
     tag: 'app-documents',

@@ -1,5 +1,5 @@
 import { Component, State } from '@stencil/core';
-import { getFilesExtension, getPictures, getRootPath } from '../../helpers/filesHelper';
+import { getFilesExtension, getPictures, getRootPath } from '../../helpers/dataHelper';
 
 @Component({
     tag: 'app-photo',

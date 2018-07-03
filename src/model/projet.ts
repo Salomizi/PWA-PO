@@ -1,15 +1,15 @@
 export class Projet {
     screenshots: string[];
     description: string;
-    directory_name: string;
+    directoryName: string;
 
-    constructor(message: string, screenshot_number: number, directory_name: string) {
+    constructor(message: string, screenshotsCount: number, directoryName: string) {
         this.description = message;
         this.screenshots = new Array();
-        for (var i = 1; i <= screenshot_number; i++) {
+        for (var i = 1; i <= screenshotsCount; i++) {
             this.screenshots.push(String(i));
         }
 
-        this.directory_name = directory_name;
+        this.directoryName = directoryName;
     }
 }
