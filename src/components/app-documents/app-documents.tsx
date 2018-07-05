@@ -42,7 +42,7 @@ export class AppDocuments {
                                     {'fichier ' + file.ext}
                                 </h3>
                             </div>
-                            <a class='openButton' target="_blank" href={this.rootPath + file.doc + '.' + file.ext}>
+                            <a class='openButton' target="_self" href={this.rootPath + file.doc + '.' + file.ext} download={file.doc + '.' + file.ext}>
                                 <ion-icon item-right class='openImg' name='eye'> </ion-icon>
                             </a>
                         </ion-item>;

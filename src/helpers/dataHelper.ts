@@ -57,7 +57,7 @@ export function getDocuments() {
 
     { doc: 'MobileFactory', ext: 'pdf', pic: 'Sopra Steria_MobileFactory-V2018.png' },
 
-    { doc: 'frise', ext: 'jpg', pic: 'frise.png' }
+    { doc: 'frise', ext: 'png', pic: 'frise.png' }
 
   ];
 
