@@ -24,7 +24,7 @@ export class AppFooter {
                     <ion-icon name="images"></ion-icon>
                 </ion-button>
 
-                <ion-button href='/client'>
+                <ion-button href='/projects'>
                     <ion-icon name="ribbon"></ion-icon>
                 </ion-button>
 

@@ -44,6 +44,7 @@ export class MyApp {
           <ion-router useHash={false}>
             <ion-route url='/' component='app-home'></ion-route>
             <ion-route url='/photo' component='app-photo'></ion-route>
+            <ion-route url='/projects' component='app-projects-gallery'></ion-route>
             <ion-route url='/client' component='app-client'></ion-route>
             <ion-route url='/documents' component='app-documents'></ion-route>
           </ion-router>
